@@ -1,31 +1,34 @@
 using System;
 
-public class Order
+namespace GettingStartedTutorials.CSharp.Encapsulation
 {
-    private DateTime _date;
-
-    public Order(string number) : this(number, DateTime.Now)
-    { }
-    public Order(string number, DateTime date)
+    public class Order
     {
-        Number = number;
-        Date = date;
-    }
+        private DateTime _date;
 
-    public string Number { get; }
-    public DateTime Date
-    {
-        get => _date;
-        set
+        public Order(string number) : this(number, DateTime.Now)
+        { }
+        public Order(string number, DateTime date)
         {
-            if (value > DateTime.Now)
-            {
-                throw new ArgumentOutOfRangeException(nameof(value));
-            }
-
-            _date = value;
+            Number = number;
+            Date = date;
         }
-    }
 
-    public override string ToString() => $"{Number}    {Date}";
+        public string Number { get; }
+        public DateTime Date
+        {
+            get => _date;
+            set
+            {
+                if (value > DateTime.Now)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value));
+                }
+
+                _date = value;
+            }
+        }
+
+        public override string ToString() => $"{Number}    {Date}";
+    }
 }

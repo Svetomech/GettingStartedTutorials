@@ -1,4 +1,7 @@
-public abstract class Entity
+namespace GettingStartedTutorials.CSharp.Classes
 {
-    public abstract override string ToString();
+    public abstract class Entity
+    {
+        public abstract override string ToString();
+    }
 }

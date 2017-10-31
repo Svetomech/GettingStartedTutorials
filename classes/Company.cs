@@ -1,9 +1,12 @@
-public class Company : Entity
+namespace GettingStartedTutorials.CSharp.Classes
 {
-    public string Name { get; set; }
-    public Address ShippingAddress { get; set; }
+    public class Company : Entity
+    {
+        public string Name { get; set; }
+        public Address ShippingAddress { get; set; }
 
-    public override string ToString() => 
-        $@"{Name}
+        public override string ToString() =>
+            $@"{Name}
         {ShippingAddress}";
+    }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace daystilbirthday
+namespace GettingStartedTutorials.CSharp.DatesTimes
 {
     class Program
     {

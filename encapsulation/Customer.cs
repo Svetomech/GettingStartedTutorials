@@ -1,33 +1,36 @@
 using System;
 using System.Collections.Generic;
 
-public class Customer
+namespace GettingStartedTutorials.CSharp.Encapsulation
 {
-    private List<Order> _orders = new List<Order>();
-
-    public Customer(string name)
+    public class Customer
     {
-        Name = name;
-    }
+        private List<Order> _orders = new List<Order>();
 
-    public string Name { get; }
-    public IReadOnlyList<Order> Orders => _orders.AsReadOnly();
-
-    public void AddOrder(Order order)
-    {
-        if (order == null)
+        public Customer(string name)
         {
-            throw new ArgumentNullException(nameof(order));
+            Name = name;
         }
 
-        int existingOrderIndex = _orders.FindIndex(o => o.Number == order.Number);
-        if (existingOrderIndex != -1)
+        public string Name { get; }
+        public IReadOnlyList<Order> Orders => _orders.AsReadOnly();
+
+        public void AddOrder(Order order)
         {
-            _orders[existingOrderIndex] = order;
-        }
-        else
-        {
-            _orders.Add(order);
+            if (order == null)
+            {
+                throw new ArgumentNullException(nameof(order));
+            }
+
+            int existingOrderIndex = _orders.FindIndex(o => o.Number == order.Number);
+            if (existingOrderIndex != -1)
+            {
+                _orders[existingOrderIndex] = order;
+            }
+            else
+            {
+                _orders.Add(order);
+            }
         }
     }
 }

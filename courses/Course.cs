@@ -1,22 +1,25 @@
 using System;
 using System.Collections.Generic;
 
-public class Course
+namespace GettingStartedTutorials.CSharp.Accessibility
 {
-    private IEnumerable<Student> enrolledStudents;
-    
-    public Course(IEnumerable<Student> enrolledStudents)
+    public class Course
     {
-        this.enrolledStudents = enrolledStudents;
-    }
+        private IEnumerable<Student> enrolledStudents;
 
-    public string Name { get; set; } = "Software Engineering";
-
-    public IEnumerable<string> GetRoster()
-    { 
-        foreach (var student in enrolledStudents)
+        public Course(IEnumerable<Student> enrolledStudents)
         {
-            yield return student.RosterName;
+            this.enrolledStudents = enrolledStudents;
+        }
+
+        public string Name { get; set; } = "Software Engineering";
+
+        public IEnumerable<string> GetRoster()
+        {
+            foreach (var student in enrolledStudents)
+            {
+                yield return student.RosterName;
+            }
         }
     }
 }

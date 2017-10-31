@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace factors
+namespace GettingStartedTutorials.CSharp.LoopingWhile
 {
     class Program
     {

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace sum
+namespace GettingStartedTutorials.CSharp.LoopingList
 {
     class Program
     {

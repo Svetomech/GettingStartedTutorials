@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace encapsulation
+namespace GettingStartedTutorials.CSharp.Encapsulation
 {
     static class Program
     {

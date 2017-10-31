@@ -1,7 +1,7 @@
 ﻿using System;
-using IntExtensions;
+using Svetomech.Utilities.Extensions;
 
-namespace hangman
+namespace GettingStartedTutorials.CSharp.IfThen
 {
     class Program
     {
@@ -14,7 +14,7 @@ namespace hangman
             int correctNumber = random.Next(lowerBound, upperBound + 1);
             string greetingTemplate = $"Please, guess a number between {lowerBound} and {upperBound}: ";
             string greeting = greetingTemplate;
-            
+
             int guessedNumber;
             while (true)
             {
@@ -35,7 +35,7 @@ namespace hangman
                 }
 
                 // Yay! Number is finally validated
-                
+
                 if (guessedNumber == correctNumber) break;
                 Console.WriteLine(guessedNumber > correctNumber ? "You guessed high" : "You guessed low");
 

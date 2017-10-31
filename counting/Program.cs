@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace counting
+namespace GettingStartedTutorials.CSharp.LoopingFor
 {
     class Program
     {

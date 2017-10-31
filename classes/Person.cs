@@ -1,10 +1,13 @@
-public class Person : Entity
+namespace GettingStartedTutorials.CSharp.Classes
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public Address ShippingAddress { get; set; }
+    public class Person : Entity
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public Address ShippingAddress { get; set; }
 
-    public override string ToString() => 
-        $@"{FirstName} {LastName}
+        public override string ToString() =>
+            $@"{FirstName} {LastName}
         {ShippingAddress}";
+    }
 }

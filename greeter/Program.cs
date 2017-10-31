@@ -1,7 +1,7 @@
 ﻿using System;
-using IntExtensions;
+using Svetomech.Utilities.Extensions;
 
-namespace greeter
+namespace GettingStartedTutorials.CSharp.LogicalExpressions
 {
     class Program
     {

@@ -1,8 +1,8 @@
 using System;
 
-namespace IntExtensions
+namespace Svetomech.Utilities.Extensions
 {
-    public static class Library
+    public static class IntExtensions
     {
         public static bool In(this int number, int lowerBound, int upperBound) => 
             number >= lowerBound && number <= upperBound;
