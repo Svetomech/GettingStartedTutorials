@@ -29,6 +29,6 @@ namespace GettingStartedTutorials.CSharp.Encapsulation
             }
         }
 
-        public override string ToString() => $"{Number}    {Date}";
+        public override string ToString() => $"{Number}\t{Date}";
     }
 }
