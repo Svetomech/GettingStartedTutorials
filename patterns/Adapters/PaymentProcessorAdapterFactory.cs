@@ -1,4 +1,8 @@
-namespace GettingStartedTutorials.CSharp.Patterns
+using GettingStartedTutorials.CSharp.Patterns.Adapters.ProviderAggregate;
+using GettingStartedTutorials.CSharp.Patterns.Exceptions;
+using GettingStartedTutorials.CSharp.Patterns.Interfaces;
+
+namespace GettingStartedTutorials.CSharp.Patterns.Adapters
 {
     public class PaymentProcessorAdapterFactory : IPaymentProcessorAdapterFactory
     {

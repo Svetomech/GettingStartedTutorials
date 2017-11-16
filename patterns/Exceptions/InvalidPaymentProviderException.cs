@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace GettingStartedTutorials.CSharp.Patterns
+namespace GettingStartedTutorials.CSharp.Patterns.Exceptions
 {
     [Serializable]
     internal class InvalidPaymentProviderException : Exception

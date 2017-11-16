@@ -1,6 +1,6 @@
-namespace GettingStartedTutorials.CSharp.Patterns
+namespace GettingStartedTutorials.CSharp.Patterns.Adapters.ProviderAggregate
 {
-    public partial class PaySalProvider
+    internal class PaySalProvider
     {
         // throws exception if payment is rejected
         public void ProcessPayment(string merchantId, CreditCardDetails cardInfo, 

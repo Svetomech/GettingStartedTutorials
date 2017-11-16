@@ -1,4 +1,4 @@
-namespace GettingStartedTutorials.CSharp.Patterns
+namespace GettingStartedTutorials.CSharp.Patterns.Interfaces
 {
     public interface IPaymentProcessorAdapterFactory
     {

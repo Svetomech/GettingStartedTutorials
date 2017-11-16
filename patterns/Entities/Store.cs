@@ -1,4 +1,6 @@
-namespace GettingStartedTutorials.CSharp.Patterns
+using GettingStartedTutorials.CSharp.Patterns.Interfaces;
+
+namespace GettingStartedTutorials.CSharp.Patterns.Entities
 {
     public class Store
     {

@@ -1,6 +1,6 @@
-namespace GettingStartedTutorials.CSharp.Patterns
+namespace GettingStartedTutorials.CSharp.Patterns.Adapters.ProviderAggregate
 {
-    public class StwipeProvider
+    internal class StwipeProvider
     {
         public StwipeProvider(string merchantKey)
         { }

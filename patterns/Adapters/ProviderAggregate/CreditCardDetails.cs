@@ -1,6 +1,6 @@
-namespace GettingStartedTutorials.CSharp.Patterns
+namespace GettingStartedTutorials.CSharp.Patterns.Adapters.ProviderAggregate
 {
-    public class CreditCardDetails
+    internal class CreditCardDetails
     {
         public CreditCardDetails(string cardNumber, string expiration)
         {

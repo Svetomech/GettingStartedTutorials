@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace GettingStartedTutorials.CSharp.Patterns
+namespace GettingStartedTutorials.CSharp.Patterns.Interfaces
 {
     public interface IRepository<T>
     {
